@@ -4,5 +4,5 @@ My intention for putting them on github is so that I can reinforce good coding h
 - Linting 
 - Writing Test Cases
 - A given, but version control
-
+- Package Imports
 Secondary intentions include building a larger index of code I have written, as well as backing up this work in case it is ever lost on LeetCode
