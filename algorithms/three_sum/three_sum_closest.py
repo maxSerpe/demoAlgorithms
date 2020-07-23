@@ -1,4 +1,5 @@
-def threeSumClosest(nums: [int], target: int) -> int:
+# TODO make optional whether argurments are positional or keyword
+def threeSumClosest(nums, target) -> int:
     # brute force would be n^3, make every combo of 3 and take the best
     # we can copy previous problem...
     # pos1 starts right and moves left
@@ -19,7 +20,7 @@ def threeSumClosest(nums: [int], target: int) -> int:
         pos2 = pos1 + 1
         pos3 = numsLen - 1
         while(pos2 < pos3):
-            print([pos1, pos2, pos3])
+            # print([pos1, pos2, pos3])
             tempAns = nums[pos1] + nums[pos2] + nums[pos3]
             if (tempAns == target):
                 return tempAns
