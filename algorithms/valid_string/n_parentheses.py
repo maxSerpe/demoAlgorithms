@@ -6,18 +6,15 @@ class nParentheses:
         return list(set(self.recParenGen(n)))
 
     def recParenGen(self, n: int):
-        # print(n, "top")
         if n in self.subSolutions:
             return self.subSolutions[n]
         else:
             ans = []
             counter = 1
             while(n >= counter):
-                # print(n, counter, ans)
                 if(counter == n):
                     ans += ['('+x+')' for x in self.recParenGen(n-1)]
                     self.subSolutions[n] = ans
-                    # print(ans)
                     return ans
                 prefixes = self.recParenGen(counter)
                 for prefix in prefixes:
